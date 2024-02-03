@@ -111,10 +111,10 @@
     {
       "identity" : "swiftuix",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftUIX/SwiftUIX",
+      "location" : "https://github.com/marcuswu0814/SwiftUIX",
       "state" : {
-        "revision" : "a5a22a1aaca885c229f475af049d75a6d9144de8",
-        "version" : "0.1.9"
+        "branch" : "fix-view-builder-issue-when-working-with-tca",
+        "revision" : "acea1353563975992122345fd1de7e63a41b1a7f"
       }
     },
     {

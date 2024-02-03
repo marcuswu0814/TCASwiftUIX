@@ -11,8 +11,10 @@
 		09357EE92B6CEEA400EB1D58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09357EE82B6CEEA400EB1D58 /* ContentView.swift */; };
 		09357EEB2B6CEEA500EB1D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09357EEA2B6CEEA500EB1D58 /* Assets.xcassets */; };
 		09357EEE2B6CEEA500EB1D58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09357EED2B6CEEA500EB1D58 /* Preview Assets.xcassets */; };
-		09357EF62B6CEED600EB1D58 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 09357EF52B6CEED600EB1D58 /* SwiftUIX */; };
 		09357EF92B6CEEEA00EB1D58 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 09357EF82B6CEEEA00EB1D58 /* ComposableArchitecture */; };
+		0988A7C52B6E0C9F00F46EA0 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 0988A7C42B6E0C9F00F46EA0 /* SwiftUIX */; };
+		0988A7C82B6E0D2B00F46EA0 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 0988A7C72B6E0D2B00F46EA0 /* SwiftUIX */; };
+		09DBA2D22B6E0C4E00383EC0 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 09DBA2D12B6E0C4E00383EC0 /* SwiftUIX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0988A7C52B6E0C9F00F46EA0 /* SwiftUIX in Frameworks */,
 				09357EF92B6CEEEA00EB1D58 /* ComposableArchitecture in Frameworks */,
-				09357EF62B6CEED600EB1D58 /* SwiftUIX in Frameworks */,
+				09DBA2D22B6E0C4E00383EC0 /* SwiftUIX in Frameworks */,
+				0988A7C82B6E0D2B00F46EA0 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +92,10 @@
 			);
 			name = TCASwiftUIX;
 			packageProductDependencies = (
-				09357EF52B6CEED600EB1D58 /* SwiftUIX */,
 				09357EF82B6CEEEA00EB1D58 /* ComposableArchitecture */,
+				09DBA2D12B6E0C4E00383EC0 /* SwiftUIX */,
+				0988A7C42B6E0C9F00F46EA0 /* SwiftUIX */,
+				0988A7C72B6E0D2B00F46EA0 /* SwiftUIX */,
 			);
 			productName = TCASwiftUIX;
 			productReference = 09357EE32B6CEEA400EB1D58 /* TCASwiftUIX.app */;
@@ -120,8 +126,8 @@
 			);
 			mainGroup = 09357EDA2B6CEEA400EB1D58;
 			packageReferences = (
-				09357EF42B6CEED600EB1D58 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				09357EF72B6CEEEA00EB1D58 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				0988A7C62B6E0D2B00F46EA0 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 			);
 			productRefGroup = 09357EE42B6CEEA400EB1D58 /* Products */;
 			projectDirPath = "";
@@ -358,14 +364,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		09357EF42B6CEED600EB1D58 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.9;
-			};
-		};
 		09357EF72B6CEEEA00EB1D58 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -374,18 +372,34 @@
 				minimumVersion = 1.7.2;
 			};
 		};
+		0988A7C62B6E0D2B00F46EA0 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcuswu0814/SwiftUIX";
+			requirement = {
+				branch = "fix-view-builder-issue-when-working-with-tca";
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		09357EF52B6CEED600EB1D58 /* SwiftUIX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 09357EF42B6CEED600EB1D58 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
-			productName = SwiftUIX;
-		};
 		09357EF82B6CEEEA00EB1D58 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 09357EF72B6CEEEA00EB1D58 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		0988A7C42B6E0C9F00F46EA0 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIX;
+		};
+		0988A7C72B6E0D2B00F46EA0 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0988A7C62B6E0D2B00F46EA0 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		09DBA2D12B6E0C4E00383EC0 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
